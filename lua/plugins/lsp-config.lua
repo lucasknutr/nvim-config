@@ -16,6 +16,8 @@ return {
 					"jsonls",
 					"quick_lint_js",
 					"rust_analyzer",
+          "pylsp",
+          "tailwindcss",
 				},
 			})
 		end,
@@ -43,6 +45,12 @@ return {
 			lspconfig.rust_analyzer.setup({
 				capabilities = capabilities,
 			})
+      lspconfig.pylsp.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.tailwindcss.setup({
+        capabilities = capabilities,
+      })
 			-- shortcuts
 			vim.keymap.set("n", "N", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)

@@ -11,6 +11,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.o.number = true
+vim.o.relativenumber = true
+
 require("nvim-options")
 require("shortcuts")
 require("lazy").setup("plugins")

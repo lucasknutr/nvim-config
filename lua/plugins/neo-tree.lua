@@ -12,5 +12,7 @@ return {
 		vim.keymap.set("n", "<C-h>", ":Neotree focus <CR>")
 		vim.keymap.set("n", "<S-j>", ':execute "normal! Vj"<CR>')
 		vim.keymap.set("n", "<S-k>", ':execute "normal! Vk"<CR>')
+    -- custom configs --
+    vim.keymap.set("n", "<C-x>", ":Neotree dir=~/.config/nvim <CR>")
 	end,
 }
