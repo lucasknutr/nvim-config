@@ -18,6 +18,8 @@ return {
 					"rust_analyzer",
           "pylsp",
           "tailwindcss",
+          "cssls",
+          "jdtls",
 				},
 			})
 		end,
@@ -49,6 +51,12 @@ return {
         capabilities = capabilities,
       })
       lspconfig.tailwindcss.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.cssls.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.jdtls.setup({
         capabilities = capabilities,
       })
 			-- shortcuts

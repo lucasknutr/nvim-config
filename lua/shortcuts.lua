@@ -66,4 +66,3 @@ vim.keymap.set('n', '<C-t>', ':term <CR>', { noremap = true, silent = true })
 
 -- Exit terminal mode
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { noremap = true, silent = true })
-

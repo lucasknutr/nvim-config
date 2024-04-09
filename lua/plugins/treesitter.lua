@@ -38,6 +38,9 @@ return {
 				"vue",
 				"yaml",
 			},
+      vim.filetype.add({
+        pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+      }),
 			highlight = { enable = true },
 			indent = { enable = true },
 		})
